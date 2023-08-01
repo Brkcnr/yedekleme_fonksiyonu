@@ -96,5 +96,5 @@ Aug 01 10:50:38 kali script.sh[28498]: /home/kali/siber-sh/script.sh: line 5: //
 Aug 01 10:50:48 kali script.sh[28580]: /home/kali/siber-sh/script.sh: line 5: //: Is a directory
 Aug 01 10:50:58 kali script.sh[28663]: /home/kali/siber-sh/script.sh: line 5: //: Is a directory
 ````
-// Shell script'i sistem başlangıcında çalışacak şekilde ayarlamış oldun.
+Shell script'i sistem başlangıcında çalışacak şekilde ayarlamış oldun.
 
