@@ -1,8 +1,8 @@
 # yedekleme_fonksiyonu
 Linux işletim sisteminde yazılmış bir yedekleme fonksiyonu 
-'''
+``````
 echo "deneme"
-'''
+``````
 ADIM 1
 // Öncelikle 'sudo nano' komutu ile oluşturmak istediğimiz dosyanın ismini girip belirlediğimiz konumda shell script oluşturun
 # sudo nano /home/kali/siber-sh/script.sh 
