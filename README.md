@@ -55,7 +55,7 @@ ExecStart=/usr/bin/script.sh
 [Install]
 WantedBy=multi-user.target
 ````
-// Dosyayı kaydedip kapatın.
+Dosyayı kaydedip kapatın.
 
 ADIM 3
 Yeni servisi etkinleştirin
