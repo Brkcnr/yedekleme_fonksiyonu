@@ -37,7 +37,7 @@ else
 fi
 done
 ````
-// Kodu yazdıktan sonra script'i çalıştırılabilir yapmak için 'sudo chmod +x /home/kali/siber-sh/script.sh' komutunu yazın
+Kodu yazdıktan sonra script'i çalıştırılabilir yapmak için 'sudo chmod +x /home/kali/siber-sh/script.sh' komutunu yazın
 
 ADIM 2
 Ardından, sisteminizdeki systemd için bir hizmet birimi dosyası oluşturun. Bu dosya .service uzantısına sahip olmalı ve /lib/systemd/system/ dizini altına kaydedilmelidir.
