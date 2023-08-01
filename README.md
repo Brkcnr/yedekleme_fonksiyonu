@@ -4,7 +4,7 @@ Linux işletim sisteminde yazılmış bir yedekleme fonksiyonu
 ADIM 1
 Öncelikle 'sudo nano' komutu ile oluşturmak istediğimiz dosyanın ismini girip belirlediğimiz konumda shell script oluşturun
 ````
-# sudo nano /home/kali/siber-sh/script.sh
+sudo nano /home/kali/siber-sh/script.sh
 ```` 
 Ardından script.sh dosyasının içine yedekleme fonksiyonunu yapacak kodu yazın:
 ````
@@ -61,11 +61,15 @@ ADIM 3
 Yeni servisi etkinleştirin
 Yeni dosyayı okumak için systemctl arka plan programını yeniden yükleyin. .service dosyasında herhangi bir değişiklik yaptıktan sonra bu arka plan programını her seferinde yeniden yüklemeniz gerekir.
 ````
-# sudo systemctl daemon-reload 
-// Şimdi hizmetin sistem önyüklemesinde başlamasını sağlayın, ayrıca aşağıdaki komutları kullanarak hizmeti başlatın.
+# sudo systemctl daemon-reload
+````
+Şimdi hizmetin sistem önyüklemesinde başlamasını sağlayın, ayrıca aşağıdaki komutları kullanarak hizmeti başlatın.
+````
 # sudo systemctl enable shellscript.service 
-# sudo systemctl start shellscript.service 
-// Son olarak komut dosyasının çalışır durumda olduğunu ve bir systemd hizmeti olarak çalıştığını doğrulayın.
+# sudo systemctl start shellscript.service
+````
+Son olarak komut dosyasının çalışır durumda olduğunu ve bir systemd hizmeti olarak çalıştığını doğrulayın.
+````
 # sudo systemctl status shellscript.service 
 ````
 Çıktı aşağıdaki gibi görünmeli
