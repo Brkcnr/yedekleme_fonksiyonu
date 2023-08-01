@@ -1,9 +1,8 @@
 # yedekleme_fonksiyonu
 Linux işletim sisteminde yazılmış bir yedekleme fonksiyonu 
-``````
-echo "deneme"
-``````
+
 ADIM 1
+````
 // Öncelikle 'sudo nano' komutu ile oluşturmak istediğimiz dosyanın ismini girip belirlediğimiz konumda shell script oluşturun
 # sudo nano /home/kali/siber-sh/script.sh 
 // Ardından script.sh dosyasının içine yedekleme fonksiyonunu yapacak kodu yazın:
@@ -38,9 +37,9 @@ fi
 done
 
 // Kodu yazdıktan sonra script'i çalıştırılabilir yapmak için 'sudo chmod +x /home/kali/siber-sh/script.sh' komutunu yazın
-
+````
 ADIM 2
-
+````
 // Ardından, sisteminizdeki systemd için bir hizmet birimi dosyası oluşturun. Bu dosya .service uzantısına sahip olmalı ve /lib/systemd/system/ dizini altına kaydedilmelidir.
 # sudo nano /lib/systemd/system/shellscript.service 
 // Şimdi aşağıdaki içeriği ekleyin ve shell script adını ve konumunu güncelleyin.
@@ -55,9 +54,9 @@ ExecStart=/usr/bin/script.sh
 WantedBy=multi-user.target
 
 // Dosyayı kaydedip kapatın.
-
+````
 ADIM 3
-
+````
 // Yeni servisi etkinleştirin
 // Yeni dosyayı okumak için systemctl arka plan programını yeniden yükleyin. .service dosyasında herhangi bir değişiklik yaptıktan sonra bu arka plan programını her seferinde yeniden yüklemeniz gerekir.
 # sudo systemctl daemon-reload 
@@ -91,3 +90,4 @@ Aug 01 10:50:48 kali script.sh[28580]: /home/kali/siber-sh/script.sh: line 5: //
 Aug 01 10:50:58 kali script.sh[28663]: /home/kali/siber-sh/script.sh: line 5: //: Is a directory
 
 // Shell script'i sistem başlangıcında çalışacak şekilde ayarlamış oldun.
+````
